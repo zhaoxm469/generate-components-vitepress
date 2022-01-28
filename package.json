@@ -1,7 +1,7 @@
 {
   "name": "generate-components-vitepress",
   "version": "0.16.9",
-  "description": "dumi like documentation tool",
+  "description": "基于vitepress快速构建UI组件库文档",
   "main": "dist/node/index.js",
   "typings": "types/index.d.ts",
   "bin": {
