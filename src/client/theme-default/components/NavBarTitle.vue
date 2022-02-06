@@ -4,14 +4,10 @@
     :href="$withBase($localePath)"
     :aria-label="`${$siteByRoute.title}, back to home`"
   >
-    <img
-      v-if="$themeConfig.logo"
-      class="logo"
-      :src="$withBase($themeConfig.logo)"
-      alt="Logo"
-    />
+    <img v-if="$themeConfig.logo" class="logo" :src="$withBase($themeConfig.logo)" alt="Logo" />
     {{ $site.title }}
   </a>
+  <span v-if="$site.version" class="nav-bar-title-site-version">{{ $site.version }}</span>
 </template>
 
 <style scoped>
@@ -28,8 +24,14 @@
 }
 
 .logo {
-  margin-right: .75rem;
+  margin-right: 0.75rem;
   height: 1.3rem;
   vertical-align: bottom;
+}
+
+.nav-bar-title-site-version {
+  margin-left: 10px;
+  margin-top: 4px;
+  color: #747474;
 }
 </style>

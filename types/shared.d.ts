@@ -13,6 +13,7 @@ export interface SiteData<ThemeConfig = any> {
   base: string
   lang: string
   title: string
+  version: string
   description: string
   head: HeadConfig[]
   themeConfig: ThemeConfig

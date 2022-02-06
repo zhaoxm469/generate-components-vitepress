@@ -15,6 +15,7 @@ export interface UserConfig<ThemeConfig = any> {
   lang?: string
   base?: string
   title?: string
+  version?: string;
   description?: string
   head?: HeadConfig[]
   themeConfig?: ThemeConfig
@@ -112,7 +113,8 @@ export async function resolveSiteData(root: string): Promise<SiteData> {
   return {
     lang: userConfig.lang || 'en-US',
     title: userConfig.title || 'VitePress',
-    description: userConfig.description || 'A VitePress site',
+    version: userConfig.version || 'VitePress',
+    description: userConfig.description || '',
     base: userConfig.base ? userConfig.base.replace(/([^/])$/, '$1/') : '/',
     head: userConfig.head || [],
     themeConfig: userConfig.themeConfig || {},
