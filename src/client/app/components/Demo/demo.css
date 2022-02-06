@@ -1,7 +1,7 @@
 .demo {
   background-color: #fff;
   border: 1px solid var(--border-color);
-  border-radius: 1px;
+  border-radius: 4px;
 }
 
 .demo-slot {
