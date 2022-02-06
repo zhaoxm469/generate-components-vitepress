@@ -94,7 +94,7 @@ export function createRouter(
           })
         }
       }
-    } catch (err) {
+    } catch (err: any) {
       if (!err.message.match(/fetch/)) {
         console.error(err)
       }
